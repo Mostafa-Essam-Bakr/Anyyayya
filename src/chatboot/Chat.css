@@ -1,0 +1,574 @@
+.aiframe {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  bottom: 0px;
+  height: 100%;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.vvvv {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -3;
+  filter: blur(5px);
+}
+.parentaichat {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  left: 1500px;
+  animation-name: move;
+  animation-timing-function: linear;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+@keyframes move {
+  from {
+    left: 1500px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+.parentaichat svg,
+.login svg {
+  position: absolute;
+  z-index: 5;
+  font-size: xxx-large;
+  color: #01001b;
+  cursor: pointer;
+  left: 10px;
+  transition: 0.5s;
+}
+
+.parentaichat svg:hover,
+.login svg:hover {
+  left: 0px;
+  color: #74a0f8;
+}
+.hai {
+  transition: 0.5s;
+  position: relative;
+  left: 30px;
+  font-family: "Carter One", system-ui;
+  color: #ffffff;
+  display: flex;
+  top: 20px;
+}
+.hai:hover {
+  left: 50px;
+  color: white;
+}
+.btnai {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #ef14ff, #2a0a55, #4878c0);
+  font-family: fantasy;
+  box-shadow: 3px 3px 3px grey;
+  font-size: xx-large;
+  transition: 0.5s;
+  position: relative;
+  z-index: 2;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+  top: 10px;
+  text-decoration: none;
+}
+.btnai a {
+  text-decoration: none;
+  color: white;
+}
+
+.btnai:hover {
+  box-shadow: none;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right, #4878c0, #4878c0, #4878c0);
+  right: 20px;
+}
+
+.pbtnai {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+  /* right: 20px; */
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.logouticon {
+  background: none;
+  position: absolute;
+  left: -10px;
+}
+.logouticon:hover {
+  background: none;
+}
+.logouticon svg {
+  font-size: xx-large;
+}
+.error {
+  color: red;
+}
+.pbtnai svg {
+  overflow: hidden;
+  vertical-align: middle;
+  width: 300px;
+  height: 300px;
+  color: white;
+  animation: flash;
+  animation-duration: 0.4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+  from {
+    color: white;
+  }
+  to {
+    color: #0014ff;
+  }
+}
+.hsai {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hsai h1,
+.hsai h3 {
+  position: relative;
+  color: #ffffff;
+  font-family: monospace;
+  cursor: pointer;
+  left: 0px;
+  transition: 0.5s;
+  font-size: xxx-large;
+}
+
+.hsai h1:hover,
+.hsai h3:hover {
+  left: 5px;
+  color: blue;
+}
+
+.hsai svg {
+  width: 200px;
+  height: 200px;
+}
+.facepart:after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 50px;
+  background-color: rgb(0, 255, 157);
+  margin-left: -50px;
+  top: -120px;
+  z-index: -1;
+  animation: eyes 4s infinite ease-in;
+}
+@keyframes eyes {
+  0% {
+    background-color: white;
+  }
+  90% {
+    background-color: white;
+  }
+  92.5% {
+    background-color: rgb(0, 0, 0);
+  }
+  95% {
+    background-color: white;
+  }
+  97.5% {
+    background-color: rgb(0, 0, 0);
+  }
+  100% {
+    background-color: white;
+  }
+}
+.facepart {
+  position: relative;
+}
+.facepart:before {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 30px;
+  background-image: linear-gradient(to right, red, red, black);
+  top: -70px;
+  z-index: -1;
+  margin-left: -50px;
+  animation-name: mouse;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes mouse {
+  from {
+    background-image: linear-gradient(to right, red, red, black);
+  }
+  to {
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      red,
+      rgb(255, 0, 0)
+    );
+  }
+}
+.covers {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5);
+  position: absolute;
+  z-index: -1;
+}
+.parentbtn {
+  width: 100%;
+  height: 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn1 {
+  display: flex;
+  width: 300px;
+  text-decoration: none;
+  position: relative;
+  height: 75px;
+  top: 500px;
+  font-size: xx-large;
+  border: 1px solid rgb(55, 0, 255);
+  border-radius: 50px;
+  background-color: rgb(44, 44, 44);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.3s;
+  left: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.btn1:hover {
+  background-color: #5c5c5c;
+  color: rgb(255, 255, 255);
+  left: 20px;
+}
+
+.sketchfab-embed-wrapper a {
+  margin-right: 16px;
+  flex: 0 0 32px;
+  z-index: 1;
+  color: red;
+  display: none;
+}
+.viewer .landing .watermark {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  display: none;
+}
+.MODEL {
+  width: 100%;
+  height: 500px;
+}
+.LOGO {
+  width: 250px;
+  height: 200px;
+}
+.pstart {
+  animation-name: move;
+}
+.sub {
+  position: absolute;
+  text-decoration: none;
+  width: 100px;
+  height: 35px;
+  background-color: rgb(127, 165, 243);
+  z-index: 10;
+  right: 5px;
+  top: 5px;
+  text-align: center;
+  color: white;
+  font-size: larger;
+  border-radius: 10px 10px;
+}
+.login {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+.frm1 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+.frm1 input {
+  width: 87%;
+  height: 62px;
+  border-radius: 20px;
+  border: none;
+}
+.text-sm {
+  display: none;
+}
+
+.frm1 label {
+  font-size: x-large;
+  font-family: fantasy;
+  color: white;
+}
+
+.frm1 button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px 10px;
+  background-image: linear-gradient(
+    to right,
+    rgb(68, 68, 68),
+    rgb(168, 168, 168)
+  );
+  font-family: fantasy;
+  font-size: larger;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.COVER0 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.5);
+}
+.payment {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: aliceblue;
+}
+.p-4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  gap: 13px;
+  background: rgb(3, 3, 3);
+}
+
+.p-4 div {
+  display: flex;
+}
+.p-4 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.p-4 p {
+  color: white;
+}
+
+.p-4 div input {
+  width: 94%;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: #c8d7e9;
+  color: white;
+}
+.p-4 div label {
+  font-size: xx-large;
+  font-family: unset;
+  color: white;
+}
+.p-4 button {
+  width: 50%;
+  height: 60px;
+  border: solid 1px;
+  border-radius: 10px;
+  background-color: rgb(103, 103, 104);
+  color: white;
+  font-size: large;
+  cursor: pointer;
+  margin-bottom: 25%;
+}
+.p-4 button a {
+  text-decoration: none;
+  color: white;
+}
+
+.p-4 div h6 {
+  font-size: xx-large;
+  color: white;
+}
+.parentsub {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.nav1 {
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  position: absolute;
+  height: 54px;
+  background-color: #616163;
+  border-radius: 20px 0px 0px 20px;
+}
+.nav1 a {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  top: 11px;
+  z-index: 26;
+  right: 13px;
+}
+
+.parentsubch {
+  width: 100%;
+  height: 77%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.parentsubch h1 {
+  color: white;
+}
+
+.parentsubch a {
+  text-decoration: none;
+  color: white;
+  width: 86px;
+  height: 48px;
+  background-color: #616163;
+  text-align: center;
+  border-radius: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.parentsubch a:hover {
+  background-color: #727272;
+}
+.parentsubch div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav1 svg {
+  position: absolute;
+  right: 380px;
+  top: 4px;
+  font-size: x-large;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0, 0, 0);
+}
+.aiframe .p-6 {
+  padding: 1.5rem;
+  background-color: aquamarine !important;
+}
+
+.flex .p-6 {
+  background-color: #ef14ff;
+}
+.p-6 {
+  padding: 1.5rem;
+  background-color: rgb(0, 0, 0);
+}
+.px-4 {
+  background-color: rgb(0, 0, 0) !important;
+}
+.Chatapi {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.chat-container {
+  width: 400px;
+  height: 600px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message.user {
+  background-color: #d1e7dd;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #f8d7da;
+  align-self: flex-start;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
