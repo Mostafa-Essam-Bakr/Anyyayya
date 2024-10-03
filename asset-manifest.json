@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Anyyayya/static/css/main.ba753324.css",
-    "main.js": "/Anyyayya/static/js/main.1e559673.js",
+    "main.js": "/Anyyayya/static/js/main.caafa7a0.js",
     "static/js/453.1846f4a3.chunk.js": "/Anyyayya/static/js/453.1846f4a3.chunk.js",
     "static/media/pro5.png": "/Anyyayya/static/media/pro5.b3d0058f42ff480d5405.png",
     "static/media/Me2.jpg": "/Anyyayya/static/media/Me2.8ab852b0eddc497a0b80.jpg",
@@ -32,11 +32,11 @@
     "static/media/log6.png": "/Anyyayya/static/media/log6.cd4ab68456d5875b788e.png",
     "index.html": "/Anyyayya/index.html",
     "main.ba753324.css.map": "/Anyyayya/static/css/main.ba753324.css.map",
-    "main.1e559673.js.map": "/Anyyayya/static/js/main.1e559673.js.map",
+    "main.caafa7a0.js.map": "/Anyyayya/static/js/main.caafa7a0.js.map",
     "453.1846f4a3.chunk.js.map": "/Anyyayya/static/js/453.1846f4a3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ba753324.css",
-    "static/js/main.1e559673.js"
+    "static/js/main.caafa7a0.js"
   ]
 }
